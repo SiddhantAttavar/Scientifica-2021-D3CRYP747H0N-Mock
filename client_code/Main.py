@@ -17,9 +17,6 @@ class Main(MainTemplate):
         self.buttonGrid[i][j].text = ' '
     
     Game.displayBoard = self.displayBoard
-  
-  def onStartClick(self, **event_args):
-    self.runGame(not self.botCheckBox.checked)
 
   def displayBoard(self):
     # Display the cells in the grid
@@ -31,7 +28,6 @@ class Main(MainTemplate):
     self.scoreLabel.text = f'Score: {Game.score}'
   
   def runGame(self, playerIsHuman):
-    print(playerIsHuman)
     Game.addNewNum(Game.board, False)
     Game.addNewNum(Game.board, True)
     if not playerIsHuman:
@@ -52,5 +48,5 @@ class Main(MainTemplate):
 
   def onStartClick(self, **event_args):
     """This method is called when the button is clicked"""
-    pass
+    self.runGame(not self.botCheckBox.checked)
 
