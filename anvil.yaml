@@ -1,6 +1,8 @@
 allow_embedding: false
-package_name: Material_Design_1
-name: Material Design 1
+package_name: Scientifica_2021_D3CRYP747H0N_Mock
+db_schema: []
+name: Scientifica-2021-D3CRYP747H0N-Mock
 startup_form: Form1
+renamed: true
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox}
 services: []

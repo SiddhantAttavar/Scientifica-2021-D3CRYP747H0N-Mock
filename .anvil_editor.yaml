@@ -2,4 +2,4 @@ unique_ids:
   forms: {Form1: E6CAPCBSVDEAMI2VWEDDQDF7E2QNJL6S}
   modules: {}
   server_modules: {}
-  assets: {theme.css: HQXL7UENV77BMYJOO4QRUH74E2MMT56J, standard-page.html: LZJ7OXVN72JZRH26ZV2DMUJIHQJJTALV}
+  assets: {standard-page.html: LZJ7OXVN72JZRH26ZV2DMUJIHQJJTALV, theme.css: HQXL7UENV77BMYJOO4QRUH74E2MMT56J}
