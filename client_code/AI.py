@@ -1,5 +1,4 @@
 #@author Siddhant Attavar
-from threading import Thread
 from time import sleep, time
 from copy import deepcopy
 from random import sample, choice
@@ -114,6 +113,7 @@ def moveMonteCarlo(board, score):
 
 def startAI():
     global debug
+    print('Debug')
     while not Game.gameOver:
         startTime = time()
         #bestMove, _ = move(Game.board, MAX_DEPTH, 0, Game.score)
@@ -125,13 +125,6 @@ def startAI():
             return
         Game.checkGameOver(Game.board)
         sleep(0.05 - min(0.05, time() - startTime))
-
-def runAI():
-    # Run the game with algorithm
-    root = Game.runGame(False)
-    thread = Thread(target = startAI)
-    thread.start()
-    root.mainloop()
 
 # AI Constants
 MAX_SEARCH_DEPTH = 7
