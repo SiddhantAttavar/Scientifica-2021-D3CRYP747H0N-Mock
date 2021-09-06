@@ -7,5 +7,4 @@ class Main(MainTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run when the form opens.
-
-
+    self.gameBoard.add_component(TextBox())
