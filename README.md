@@ -14,5 +14,7 @@ This project was created by Siddhant Attavar, Harshit Bansal and Mahika Neranjen
  - Install Anvil Runtime Engine: `pip install anvil-app-server`
  - Start the web server: `anvil-app-server --app .`
  - Open a web browser and navigate to [http://localhost:3030/](http://localhost:3030/)
+ 
+If you are using Visual Studio Code you can directly start the server by running the task in `.vscode/tasks.json`
 
 Or, if you are lazy, you can just to go to [this link](https://ZVAWLQHQI6U6E24G.anvil.app/U3Z7XXY7JTBWE7BM7TA6OCQ4) and play the game.
