@@ -113,7 +113,6 @@ def moveMonteCarlo(board, score):
 
 def startAI():
     global debug
-    print('Debug')
     while not Game.gameOver:
         startTime = time()
         #bestMove, _ = move(Game.board, MAX_DEPTH, 0, Game.score)

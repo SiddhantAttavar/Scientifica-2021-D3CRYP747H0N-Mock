@@ -116,8 +116,6 @@ def moveUp(board, score):
                         finBoard[row][col] = 0
                         flag = True
 
-    print(finBoard, board)
-
     return finBoard, score, flag
 
 def moveDown(board, score):
