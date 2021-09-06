@@ -11,3 +11,5 @@ This project is built by Siddhant Attavar, Harshit Bansal and Mahika Neranjen. I
  - Install Anvil Runtime Engine with the command `pip install anvil-app-server`
  - Start the web server with the command `anvil-app-server --app .`
  - Open the web browser and navigate to [http://localhost:3030/](http://localhost:3030/)
+
+Or you can just to go to [this link](https://ZVAWLQHQI6U6E24G.anvil.app/U3Z7XXY7JTBWE7BM7TA6OCQ4) and play the game.
