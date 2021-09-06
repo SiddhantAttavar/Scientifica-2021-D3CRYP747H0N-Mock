@@ -112,6 +112,11 @@ components:
     name: startGame
     layout_properties: {grid_position: 'GJANPW,HPQEQO'}
     event_bindings: {}
+  - type: Label
+    properties: {}
+    name: scoreLabel
+    layout_properties: {grid_position: 'GJANPW,VCOGEP'}
+    event_bindings: {}
 - type: FlowPanel
   properties: {}
   name: navbar_links
