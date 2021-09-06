@@ -1,76 +1,6 @@
 #@author Siddhant Attavar
-from tkinter import Tk, Frame, Label, CENTER
 from random import randrange, random
 from copy import deepcopy
-from sys import exit
-
-def runGame(playerIsHuman):
-    global scoreLabel, score, root
-    # Initialize the main display
-    root = Tk()
-    root.configure(bg = BACKGROUND_COLOR)
-    root.protocol('WM_DELETE_WINDOW', exit)
-    root.title('2048 AI')
-    root.iconbitmap('logo.ico')
-
-    score = 0
-    scoreLabel = Label(
-        root,
-        width = 19,
-        height = 1,
-        justify = CENTER,
-        font = ('Verdana', 40, 'bold'),
-        bg = BACKGROUND_COLOR
-    )
-    scoreLabel.grid(row = 0, padx = CELL_PADDING, pady = CELL_PADDING)
-
-    frame = Frame(
-        root,
-        width = SCREEN_WIDTH,
-        height = SCREEN_HEIGHT,
-        bg = BACKGROUND_COLOR
-    )
-    frame.grid(row = 1, padx = CELL_PADDING, pady = CELL_PADDING)
-
-    if playerIsHuman:
-        root.bind('<Key>', onKeyPress)
-
-    # Display board
-    for row in range(CELL_COUNT):
-        grid.append([])
-        for col in range(CELL_COUNT):
-            # Add cell to grid
-            cell = Frame(
-                frame,
-                width = CELL_SIZE,
-                height = CELL_SIZE
-            )
-            cell.grid(
-                row = row,
-                column = col,
-                padx = CELL_PADDING,
-                pady = CELL_PADDING
-            )
-
-            # Label to the cell
-            grid[row].append(Label(
-                cell,
-                width = 4,
-                height = 2,
-                bg = CELL_COLOR[board[row][col]],
-                justify = CENTER,
-                font = ('Verdana', 40, 'bold'),
-                foreground = TEXT_COLOR
-            ))
-            grid[row][col].grid()
-
-    # Start the game and add 4 nums
-    addNewNum(board, False)
-    addNewNum(board, True)
-    if playerIsHuman:
-        root.mainloop()
-    
-    return root
 
 def displayBoard():
     # Display the cells in the grid
@@ -333,6 +263,3 @@ grid = []
 gameOver = False
 scoreLabel = None
 root = None
-
-if __name__ == '__main__':
-    runGame(True)

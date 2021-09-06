@@ -1,6 +1,6 @@
 from ._anvil_designer import MainTemplate #type: ignore
 from anvil import *
-import Game.Game
+import Game
 
 class Main(MainTemplate):
   def __init__(self, **properties):
@@ -17,20 +17,17 @@ class Main(MainTemplate):
         self.buttonGrid[i][j].text = ' '
     
     Game.displayBoard = self.displayBoard
-    self.startGame(not self.botCheckBox.checked)
+    self.runGame(not self.botCheckBox.checked)
 
   def displayBoard(self):
     # Display the cells in the grid
     for row in range(self.GAME_SIZE):
         for col in range(self.GAME_SIZE):
-            self.buttonGrid[row][col].configure(
-                text = str(Game.board[row][col]) if Game.board[row][col] else '',
-                bg = Game.CELL_COLOR[Game.board[row][col]]
-            )
+            self.buttonGrid[row][col].text = str(Game.board[row][col]) if Game.board[row][col] else ''
     
     # Disply the updated score
     #scoreLabel.configure(text = f'Score: {score}')
   
-  def startGame(self, playerIsHuman):
+  def runGame(self, playerIsHuman):
     Game.addNewNum(Game.board, False)
     Game.addNewNum(Game.board, True)
