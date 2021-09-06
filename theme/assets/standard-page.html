@@ -60,4 +60,7 @@
       $('.nav-shield').trigger('click');
     }
   });
+  $(document).on('keypress', (e) => {
+    anvil.call($('.content'), 'keypress', e.key)
+  })
 </script>
