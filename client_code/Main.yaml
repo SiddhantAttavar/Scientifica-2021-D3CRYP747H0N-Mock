@@ -111,7 +111,7 @@ components:
       italic: false, background: '', bold: false, underline: false, icon: ''}
     name: startGame
     layout_properties: {grid_position: 'GJANPW,HPQEQO'}
-    event_bindings: {}
+    event_bindings: {click: onStartClick}
   - type: Label
     properties: {}
     name: scoreLabel

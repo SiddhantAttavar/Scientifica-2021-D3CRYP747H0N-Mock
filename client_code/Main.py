@@ -47,3 +47,8 @@ class Main(MainTemplate):
     if Game.flag:
         Game.addNewNum(Game.board, True)
         Game.checkGameOver(Game.board)
+
+  def onStartClick(self, **event_args):
+    """This method is called when the button is clicked"""
+    pass
+
