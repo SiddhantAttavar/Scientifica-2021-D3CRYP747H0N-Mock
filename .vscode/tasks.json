@@ -6,7 +6,7 @@
         {
             "label": "Start server",
             "type": "shell",
-            "command": "anvil-app-server --app ${workspaceFolder}",
+            "command": "anvil-app-server --app '${workspaceFolder}'",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
