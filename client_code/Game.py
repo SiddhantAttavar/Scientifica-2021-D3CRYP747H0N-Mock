@@ -1,3 +1,6 @@
+import anvil.tables as tables
+import anvil.tables.query as q
+from anvil.tables import app_tables
 #@author Siddhant Attavar
 from random import randrange, random
 from copy import deepcopy
